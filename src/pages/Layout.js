@@ -1,30 +1,30 @@
 import { Nav, Navbar, Container } from "react-bootstrap";
-import { Outlet } from "react-router-dom";
+import { LinkContainer } from "react-router-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Layout() {
   return (
-    <>
-      <Navbar expand="lg" className="bg-body-tertiary">
-        <Container>
-          <Navbar.Brand href="/">Team Titans Robotics</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="justify-content-end" style={{ width: "100%" }}>
-              <Nav.Item>
-                <Nav.Link href="/">Home</Nav.Link>
-              </Nav.Item>
+    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+      <LinkContainer to="/">
+        <Navbar.Brand href="/">Team Titans Robotics</Navbar.Brand>
+      </LinkContainer>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="justify-content-end" style={{ width: "100%" }}>
+          <LinkContainer to="/">
+            <Nav.Link eventKey={1} href="/">
+              Home
+            </Nav.Link>
+          </LinkContainer>
 
-              <Nav.Item>
-                <Nav.Link href="/our-team">Our Team</Nav.Link>
-              </Nav.Item>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-
-      <Outlet />
-    </>
+          <LinkContainer to="/our-team">
+            <Nav.Link eventKey={2} href="/our-team">
+              Our Team
+            </Nav.Link>
+          </LinkContainer>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }
 
