@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function Layout() {
   return (
     <Container>
-      <Navbar collapseOnSelect expand="sm" className="bg-body-tertiary">
+      <Navbar collapseOnSelect expand="sm" className="bg-body-white">
         <LinkContainer to="/">
           <Navbar.Brand href="/">
             <img

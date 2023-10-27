@@ -1,6 +1,7 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
+import logo_y from "./img/titan_logo_y.png"
 
 import { initializeApp } from "firebase/app";
 initializeApp({
@@ -16,10 +17,22 @@ function App() {
   return (
     <div>
       {/* Header */}
-      <header className="bg-primary text-white py-5">
+      <header className="bg-danger bg-gradient text-black py-3">
         <Container>
-          <h1>Team Titans Robotics</h1>
-          <h2>FTC 19446/7</h2>
+          <Row>
+            <Col className="my-auto">
+              <h1>Team Titans Robotics</h1>
+              <h2>FTC 19446/7</h2>
+            </Col>
+            <Col>
+              <img
+                src={ logo_y }
+                width="484"
+                height="362"
+                alt="Team Titans Logo Yellow"
+              />
+            </Col>
+          </Row>
         </Container>
       </header>
 
