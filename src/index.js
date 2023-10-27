@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import About from "./pages/About";
+import Foot from "./pages/Foot";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -16,6 +17,7 @@ root.render(
         <Route exact path="/" element={<App />} />
         <Route path="/our-team" element={<About />} />
       </Routes>
+      <Foot />
     </Router>
   </React.StrictMode>
 );
