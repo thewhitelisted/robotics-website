@@ -2,12 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -25,4 +19,5 @@
 
 html {
     scroll-behavior: smooth;
+    font-family: 'Sometype Mono', monospace !important;
 }

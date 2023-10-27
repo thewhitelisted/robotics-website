@@ -1,12 +1,27 @@
-import { Nav, Navbar, Container } from "react-bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
+import logo from "../img/titan_logo.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Layout() {
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+    <Navbar
+      bg="dark"
+      data-bs-theme="dark"
+      collapseOnSelect
+      expand="sm"
+      className="bg-body-tertiary"
+    >
       <LinkContainer to="/">
-        <Navbar.Brand href="/">Team Titans Robotics</Navbar.Brand>
+        <Navbar.Brand href="/">
+          <img
+            src={logo}
+            width="125"
+            height="75"
+            className="d-inline-block align-top"
+            alt="Team Titans Logo"
+          />
+        </Navbar.Brand>
       </LinkContainer>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
