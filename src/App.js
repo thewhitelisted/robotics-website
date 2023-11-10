@@ -1,7 +1,7 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
-import logo_y from "./img/titan_logo_y.png"
+import logo_y from "./img/titan_logo_y.png";
 
 import { initializeApp } from "firebase/app";
 initializeApp({
@@ -17,7 +17,7 @@ function App() {
   return (
     <div>
       {/* Header */}
-      <header className="bg-danger bg-gradient text-black py-3">
+      <header className="bg-burg bg-gradient text-white py-3">
         <Container>
           <Row>
             <Col className="my-auto">
@@ -26,8 +26,8 @@ function App() {
             </Col>
             <Col>
               <img
-                src={ logo_y }
-                width="484"
+                src={logo_y}
+                width="684"
                 height="362"
                 alt="Team Titans Logo Yellow"
               />

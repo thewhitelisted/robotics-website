@@ -21,3 +21,7 @@ html {
     scroll-behavior: smooth;
     font-family: 'Sometype Mono', monospace !important;
 }
+
+.bg-burg {
+  background-color: rgb(50, 0, 13);
+}
