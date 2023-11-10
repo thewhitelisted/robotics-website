@@ -24,10 +24,10 @@ function App() {
               <h1>Team Titans Robotics</h1>
               <h2>FTC 19446/7</h2>
             </Col>
-            <Col>
+            <Col className="d-flex flex-row-reverse">
               <img
                 src={logo_y}
-                width="684"
+                width="384"
                 height="362"
                 alt="Team Titans Logo Yellow"
               />
