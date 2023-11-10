@@ -2,6 +2,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
 import logo_y from "./img/titan_logo_y.png";
+import first_logo from "./img/FIRST_logo.png";
 
 import { initializeApp } from "firebase/app";
 initializeApp({
@@ -49,6 +50,27 @@ function App() {
           </Col>
         </Row>
       </Container>
+
+      <header className="py-5 bg-burg text-white">
+        <Container>
+          <Row>
+            <Col>
+              <h2>About FIRST®</h2>
+              <p>
+                The mission of FIRST® is to inspire young people to be science
+                and technology leaders and innovators, by engaging them in
+                exciting mentor-based programs that build science, engineering,
+                and technology skills, that inspire innovation, and that foster
+                well-rounded life capabilities including self-confidence,
+                communication, and leadership.
+              </p>
+            </Col>
+            <Col className="d-flex flex-row-reverse">
+              <img src={first_logo} width="360" height="270" alt="FIRST LOGO" />
+            </Col>
+          </Row>
+        </Container>
+      </header>
     </div>
   );
 }
